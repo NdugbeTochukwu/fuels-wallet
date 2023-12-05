@@ -17,7 +17,8 @@ const MotionStack = motion<any>(Box.Stack);
 
 export function AddNetwork() {
   const form = useNetworkForm();
-  const { isDirty, invalid } = form.getFieldState('url');
+  const _aaaaa = 123123123;
+  const { isDirty, invalid } = form.getFieldState('url', _aaaaa as any);
   const isValidUrl = isDirty && !invalid;
   const { handlers, isLoading } = useNetworks();
   const {
